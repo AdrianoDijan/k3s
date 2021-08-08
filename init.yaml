@@ -1,0 +1,7 @@
+ssh_authorized_keys:
+- github:AdrianoDijan
+k3os:
+  k3s_args:
+  - "--cluster-init"
+  - "--disable"
+  - servicelb,traefik,local-storage

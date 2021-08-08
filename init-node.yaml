@@ -1,0 +1,8 @@
+ssh_authorized_keys:
+- github:AdrianoDijan
+k3os:
+  server_url: https://10.10.1.1:6443
+  token: K10d5c0baf27d463728b5171afe8b416bfec375d0bf7b54296ad15bbcc3e0f3e89d::server:e1ea0dfbc291e032a44c1758711e99b1
+  k3s_args:
+  - "--disable"
+  - servicelb,traefik,local-storage
