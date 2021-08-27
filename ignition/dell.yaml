@@ -1,0 +1,19 @@
+variant: fcos
+version: 1.1.0
+passwd:
+  users:
+    - name: adriano
+      ssh_authorized_keys:
+        - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC1/3ctj3rvTewdemZn0cqG5wP+FvklZ4NaTWgufEDbLVFlebvEBmko53z2K3U+E9AfqMtfOCqMXOauNfzqgc+nAMrOxvXf8Gd4QX7yTBv/XiY1iu6Jck3Q3h9G9/WJOSRVBEWGMnt3wLCc42Y01bQRPi9cvB+wYI4xCAJoCEXkKXzI6koadhe4ItARL4wdIwPjzzCX5FkVopC6B/T7ZL7iU3VHgRjT7M9GcXTo6B5Yl+/Ia8slIS+yRoJCfqe3QZHVjUOMKA1u24NuQDYiiPDw7JfCB6T2CkBztZcK/HMEg2qY9qzAmYq9paVpZnlj6BGwyToAoAGGaWNHxPip39y9JneYviw/UIYLZWLKfDPEKwu2Xj65jafq/63fvodeeKRs1DV70wwxwGxREySbeaDm9oGfLC4LHSHgwakWNMZtqGt6pipdrBFsA5Z3OKQ+ZrJoYD7BYes1dhsKO+X8K83zoxzDMVbzUbS0j9WqyU0zM70AV6XGqoSSrdGOxnqK/HmpQZldEt5uWaRUPjH6SHJv+ggolmOQVkZWOAStHVw0KqnDVZa+0JlkJ5ORNcnc//f5W6shKZ1abq0FdLADQMD84640YnNDGITMxLHUxq4WaIFw0SvPnmVqMwnQMTR0gG/Trhxt3EMRm7dsXRt0ePOz/+vv9KjC+YtZFMlkOAJVdQ== adijan00@fesb.hr
+      groups:
+        - wheel
+      password_hash: $1$RMcYNztP$I.dcdr1kqB5xYWQ9rw421.
+storage:
+  files:
+    - path: /etc/hostname
+      mode: 0644
+      contents:
+        inline: xps420
+  links:
+    - path: /etc/localtime
+      target: ../usr/share/zoneinfo/Europe/Zagreb
